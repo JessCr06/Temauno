@@ -30,12 +30,12 @@
   border: 2px solid @white;
   .border-radius(@baseBorderRadius);
   .ie7-restore-left-whitespace(); // Give IE7 some love
-  color: @white;
-  background-color: transparent;
+  color: @principal;
+  background-color: @white;
 
   // Hover state
   &:hover {
-    color: @grayDark;
+    color: @dorado;
     text-decoration: none;
     background-color: @white;
   }
@@ -72,13 +72,12 @@ input.c-btn {
 // Alternate .c-btn
 
 .c-btn-submit {
-  background-color: transparent;
-  background-color: rgba(50, 90, 150, 0.25);
+  background-color: @dorado;
+  color: @white;
 }
 
 .c-btn-delete {
-  background-color: transparent;
-  background-color: rgba(150, 50, 50, 0.25);
+  background-color: @white;
 }
 
 .c-btn-right-align {

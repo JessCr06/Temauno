@@ -16,8 +16,8 @@
  */
 
 /* @topBarBackgroundColor: rgb(22, 21, 20); */
-@topBarBackgroundColor: #9F2241;
-@topBarButtonHoverColor: @orange;
+@topBarBackgroundColor: @principal;
+@topBarButtonHoverColor: @dorado;
 
 #top-bar {
   background-color: @topBarBackgroundColor;
@@ -48,8 +48,7 @@ header #logo {
 }
 
 #site-slogan {
-  background-color: @topBarBackgroundColor;
-  background-color: rgba(22, 21, 20, .75);
+  background-color: @principalOscuro;
   height: 24px;
   color: @white;
   span {
@@ -64,7 +63,7 @@ header #logo {
   display: block;
   float: right;
   margin: 12px 11px 0 0;
-  background-color: @grayDark;
+  background-color: @white;
   .border-radius(4px);
   font-size: 13px;
   line-height: 14px;
@@ -85,7 +84,7 @@ button.top-dropdown:active {
   background-image: url(../../images/gray-arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
-  color: lighten(@gray, 40%);
+  color: @principal;
 }
 
 .open > button.top-dropdown,
@@ -163,6 +162,7 @@ nav > div {
         display: block;
         padding: 4px 8px;
         line-height: 24px;
+        color: @principal;
         // border-bottom: 1px solid rgb(220, 220, 220);
         &:hover {
           color: @topBarButtonHoverColor;
@@ -194,7 +194,7 @@ nav > div {
   float: left;
   > button {
     .border-radius(4px);
-    background-color: lighten(@grayDark, 5%);
+    background-color: @white;
   }
 }
 
@@ -270,7 +270,7 @@ nav > div {
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    color: @grayLighter;
+    color: @white;
     font-size: @side/2;
     position: absolute;
     top: 0;
@@ -391,9 +391,9 @@ nav > div {
     border: none;
 
     // See .top-item
-    background-color: @grayDark;
+    background-color: @white;
     .border-radius(4px);
-    color: lighten(@gray, 40%);
+    color: @principal;
 
     // Overrides defaults for [type=text]
     // Some of this default like box-model are set by AtoM, not only Bootstrap
@@ -408,8 +408,8 @@ nav > div {
 
     &:focus {
       background-color: @graySilver;
-      color: @gray;
-      .placeholder(@grayLight);
+      color: @principal;
+      .placeholder(@principal);
     }
 
   }
@@ -421,8 +421,8 @@ nav > div {
     right: 0px;
     position: absolute;
     top: 0px;
-    background-color: #666;
-    color: white;
+    background-color: @white;
+    color: @principal;
     margin-top: 0px;
     font-size: 1.1em;
     border: none;

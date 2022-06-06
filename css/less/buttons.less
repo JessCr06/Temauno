@@ -17,6 +17,17 @@
 
 // Alternative to .btn for action buttons
 
+.btn-primary{
+  color: @principal;
+  background-color: @white;
+  background-image: none;
+  &:hover{
+  color: @white;
+  background-color: @dorado;
+  background-image: none;
+  }
+}
+
 .c-btn {
   display: inline-block;
   .ie7-inline-block();
@@ -88,7 +99,7 @@ input.c-btn {
 
 .c-btn .caret {
   border-top-color: @white;
-  border-bottom-color: @white;
+  border-bottom-color: @principal;
   margin-top: 7px;
   margin-left: 4px;
 }
@@ -96,12 +107,12 @@ input.c-btn {
 .c-btn:hover .caret,
 .open .c-btn .caret {
   border-top-color: @grayDarker;
-  border-bottom-color: @grayDarker;
+  border-bottom-color: @dorado;
 }
 
 .open .c-btn {
   background-color: @white;
-  color: @black;
+  color: @dorado;
 }
 
 /*
@@ -152,7 +163,7 @@ button.clipboard-wide {
   }
 
   &.added {
-    background-color: @blue;
+    background-color: @dorado;
     color: @white;
 
     &:before {
@@ -201,7 +212,7 @@ button.clipboard-wide {
   box-shadow: none;
   text-align: left;
   padding: 4px 7px 4px 24px;
-  color: @blue;
+  color: @principal;
   font-size: 12px;
 
   &:before {

@@ -77,21 +77,35 @@ a {
   }
 }
 
-.row{
+.row {
   margin-bottom: 100px;
 }
-#wrapper{
+
+#wrapper {
   margin-bottom: 100px;
 }
+
 .footer-page {
   position: fixed;
-  margin:0;
+  margin: 0;
   bottom: 0;
   left: 0;
   height: 100px;
   width: 100%;
-  background: @dorado;
+  background: @principal;
+
+  .footer-content {
+    margin: 0 auto;
+    width: 1170px;
+    .logo-gob {
+      width: 150px;
+      padding-top: 10px;
+    }
+  }
 }
+
+
+@media (max-width: 480px) {}
 
 /* .span3, .span9 {
   a {

@@ -95,8 +95,9 @@ a {
   background: @principal;
 
   .footer-content {
-    margin: 0 auto;
-    width: 1170px;
+    margin: 0 20px;
+    width: auto;
+
     .logo-gob {
       width: 150px;
       padding-top: 10px;
@@ -105,8 +106,30 @@ a {
 }
 
 
-@media (max-width: 480px) {}
+@media (min-width: 768px) {
+  .footer-page{
+    .footer-content {
+      margin: 0 auto;
+      width: 724px;
+    }
+  }
+}
 
+@media (min-width: 980px) {
+  .footer-page{
+    .footer-content {
+      width: 940px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-page{
+    .footer-content {
+      width: 1170px;
+    }
+  }
+}
 /* .span3, .span9 {
   a {
     color: @principal;
